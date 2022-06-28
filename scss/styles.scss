@@ -1,0 +1,109 @@
+body { margin: 0px; }
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  margin: 0px auto;
+  padding: 15px;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+  @media (max-height: 800px) { padding: 0px 15px; }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 15px auto;
+
+    @media (max-height: 800px) {
+      font-size: 2.75rem;
+      margin: 0px auto 10px auto;
+    }
+
+    @media (max-height: 650px) {
+      font-size: 2.25rem;
+      margin: 0px auto 10px auto;
+    }
+  }
+}
+
+.tab-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 15px auto;
+
+  .tab-btn {
+    width: 50%;
+    padding: 15px 0px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: transparent;
+    border-width: 0px 0px 5px 0px;
+    border-style: solid;
+    border-color: transparent;
+
+    @media (max-height: 800px) { padding-top: 0px; }
+    @media (max-height: 700px) { padding-bottom: 5px; }
+  }
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 15px auto;
+  padding: 15px 0px;
+  background-color: #fff4a3;
+  border-radius: 10px;
+  font-weight: bold;
+
+  @media (max-height: 700px) {
+    margin: 0px auto 10px auto;
+    padding: 10px 0px;
+  }
+
+  .left-score, .right-score { font-size: 2rem; }
+  .left-score { margin-left: 30px; }
+  .right-score {  margin-right: 30px; }
+}
+
+.board { margin: 5px auto 15px auto; }
+
+.pill-btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  .pill-btn {
+    width: 80%;
+    margin: 15px auto;
+    padding: 15px 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #282a35;
+    color: #fff;
+    border-width: 0px;
+    border-radius: 25px;
+  
+    @media (max-height: 800px) { 
+      margin: 10px auto;
+      padding: 10px 0px;
+    }
+
+    @media (max-height: 650px) {
+      width: 45%;
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-height: 650px) {
+    padding-top: 15px;
+
+    #restart-game-btn { order: 2; }
+    #reset-scoreboard-btn { order: 1 }
+  }
+
+  @media (max-height: 600px) { padding-top: 5px; }
+}

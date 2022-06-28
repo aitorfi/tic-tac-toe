@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/styles.min.css"/>
+    <script type="module" src="./src/TicTacToe.js"></script>
+    <script type="module" src="./src/TicTacToeController.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  </head>
+
+  <body>
+    <section class="main-section">
+      <div class="tab-btn-wrapper">
+        <button class="tab-btn" id="single-player-btn">Single player</button>
+        <button class="tab-btn" id="multiplayer-btn">Multiplayer</button>
+      </div>
+      <div class="scoreboard" id="scoreboard">
+        <span id="left-score" class="left-score"></span>
+        <span id="right-score" class="right-score"></span>
+      </div>
+      <h1 class="game-over-message" id="game-over-message"></h1>
+      <canvas id="board" class="board" width="300" height="300"></canvas>
+      <div class="pill-btn-wrapper">
+        <button class="pill-btn" id="restart-game-btn">Restart Game</button>
+        <button class="pill-btn" id="reset-scoreboard-btn">Reset Scoreboard</button>
+      </div>
+    </section>
+  </body>
+</html>
