@@ -22,7 +22,6 @@ var rightScore: HTMLSpanElement;
 var ticTacToe: TicTacToe;
 var isGameOver: boolean;
 var currentThemeIndex: number;
-var gameOverMessage: HTMLHeadingElement;
 
 window.onload = () => {
     singlePlayerBtn = document.getElementById("single-player-btn") as HTMLButtonElement;
@@ -34,7 +33,6 @@ window.onload = () => {
     leftScore = document.getElementById("left-score") as HTMLSpanElement;
     rightScore = document.getElementById("right-score") as HTMLSpanElement;
     scoreboardElement = document.getElementById("scoreboard") as HTMLDivElement;
-    gameOverMessage = document.getElementById('game-over-message') as HTMLHeadingElement;
 
     boardContext = board.getContext('2d') as CanvasRenderingContext2D;
     currentGameMode = GameMode.SinglePlayer;
